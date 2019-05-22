@@ -3,7 +3,7 @@
 <suite name="SimpleFramework">
   <test name="AutomationFramewokr">
     <classes>
-      <class name="AutomationFramework_Selenium.OrangeHRM_Test.java"/>
+      <class name="AutomationFramework_Selenium.OrangeHRM_Test"/>
     </classes>
   </test> <!-- AutomationFramewokr -->
 </suite> <!-- SimpleFramework -->
