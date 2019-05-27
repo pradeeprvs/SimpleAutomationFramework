@@ -16,16 +16,6 @@ import utilities.BaseClass;
 
 public class OrangeHRM_Test extends BaseClass{
 
-	@BeforeMethod
-	public void invoke_WebDriver() throws IOException {
-		driver=initialise_WebDriver();
-	}
-	
-	@BeforeTest
-	public void CreateReport() throws UnknownHostException {
-		createReport();
-	}
-
 	@Test
 	public void openURL() {
 		test= extent.createTest("Open URL Test");
@@ -60,14 +50,4 @@ public class OrangeHRM_Test extends BaseClass{
 		Assert.assertTrue(true);
 	}
 
-	
-	@AfterTest
-	public void endReports() {
-		endReport();
-	}
-
-	@AfterMethod
-	public void tearDown_TestObjects(ITestResult result) throws IOException {
-		tearDown(result);
-	}
 }
