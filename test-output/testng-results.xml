@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6717" started-at="2019-05-27T07:46:49Z" finished-at="2019-05-27T07:46:56Z">
+  <suite name="SimpleFramework" duration-ms="6715" started-at="2019-05-27T07:48:49Z" finished-at="2019-05-27T07:48:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6717" started-at="2019-05-27T07:46:49Z" finished-at="2019-05-27T07:46:56Z">
+    <test name="AutomationFramewokr" duration-ms="6715" started-at="2019-05-27T07:48:49Z" finished-at="2019-05-27T07:48:55Z">
       <class name="AutomationFramework_Selenium.OrangeHRM_Test">
-        <test-method status="PASS" signature="createReport()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="createReport" is-config="true" duration-ms="125" started-at="2019-05-27T07:46:49Z" finished-at="2019-05-27T07:46:49Z">
+        <test-method status="PASS" signature="createReport()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="createReport" is-config="true" duration-ms="126" started-at="2019-05-27T07:48:49Z" finished-at="2019-05-27T07:48:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method status="PASS" signature="initialise_WebDriver()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="initialise_WebDriver" is-config="true" duration-ms="1825" started-at="2019-05-27T07:46:49Z" finished-at="2019-05-27T07:46:51Z">
+        <test-method status="PASS" signature="initialise_WebDriver()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="initialise_WebDriver" is-config="true" duration-ms="1798" started-at="2019-05-27T07:48:49Z" finished-at="2019-05-27T07:48:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialise_WebDriver -->
-        <test-method status="PASS" signature="openURL()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="openURL" duration-ms="3896" started-at="2019-05-27T07:46:51Z" finished-at="2019-05-27T07:46:55Z">
+        <test-method status="PASS" signature="openURL()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="openURL" duration-ms="3944" started-at="2019-05-27T07:48:51Z" finished-at="2019-05-27T07:48:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openURL -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="tearDown" is-config="true" duration-ms="589" started-at="2019-05-27T07:46:55Z" finished-at="2019-05-27T07:46:55Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="tearDown" is-config="true" duration-ms="593" started-at="2019-05-27T07:48:55Z" finished-at="2019-05-27T07:48:55Z">
           <params>
             <param index="0">
               <value>
@@ -30,11 +30,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="endReport" is-config="true" duration-ms="266" started-at="2019-05-27T07:46:55Z" finished-at="2019-05-27T07:46:56Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="endReport" is-config="true" duration-ms="237" started-at="2019-05-27T07:48:55Z" finished-at="2019-05-27T07:48:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- AutomationFramework_Selenium.OrangeHRM_Test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- AutomationFramewokr -->
+  </suite> <!-- SimpleFramework -->
 </testng-results>
