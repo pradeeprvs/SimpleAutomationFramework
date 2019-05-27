@@ -58,11 +58,11 @@ public class BaseClass {
 	
 	@BeforeMethod
 	public WebDriver initialise_WebDriver() throws IOException {
-		FileInputStream fis= new FileInputStream("https://github.com/pradeeprvs/SimpleAutomationFramework/tree/master/src/main/java/resources/config.properties");
+		FileInputStream fis= new FileInputStream("C:\\Users\\pravinutala\\SimpleFramework\\src\\main\\java\\resources\\config.properties");
 		prop.load(fis);
 		if(prop.getProperty("browser").equalsIgnoreCase("Chrome")) {
 			this.driver=new ChromeDriver();
-			System.setProperty("webdriver.chrome.driver", prop.getProperty("chromedriver_path"));
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\pravinutala\\SimpleFramework\\src\\main\\java\\resources\\chromedriver.exe");
 			driver.manage().deleteAllCookies();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

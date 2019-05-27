@@ -10,8 +10,6 @@
           <include name="initialise_WebDriver"/>
           <include name="createReport"/>
           <include name="tearDown"/>
-          <include name="loginTest"/>
-          <include name="openURL"/>
         </methods>
       </class> <!-- AutomationFramework_Selenium.OrangeHRM_Test -->
     </classes>
