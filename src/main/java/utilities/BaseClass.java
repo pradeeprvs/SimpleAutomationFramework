@@ -66,7 +66,7 @@ public class BaseClass {
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\main\\java\\resources\\chromedriver.exe");
 			}
 			catch(Exception e) {
-				System.setProperty("webdriver.chrome.driver", "http://localhost:8080/job/SimpleFramework/ws/src/main/java/resources/chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "SimpleFramework/ws/src/main/java/resources/chromedriver.exe");
 			}
 			driver.manage().deleteAllCookies();
 			driver.manage().window().maximize();
