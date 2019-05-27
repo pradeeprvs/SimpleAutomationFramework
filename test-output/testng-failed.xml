@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="AutomationFramework_Selenium.OrangeHRM_Test">
         <methods>
+          <include name="createNodeTest"/>
           <include name="verifyLogo"/>
-          <include name="CreateReport"/>
-          <include name="endSuite"/>
-          <include name="invoke_WebDriver"/>
+          <include name="endReport"/>
+          <include name="initialise_WebDriver"/>
+          <include name="createReport"/>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
           <include name="openURL"/>
-          <include name="tearDown_TestObjects"/>
         </methods>
       </class> <!-- AutomationFramework_Selenium.OrangeHRM_Test -->
     </classes>

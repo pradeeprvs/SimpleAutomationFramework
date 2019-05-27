@@ -16,6 +16,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -31,10 +35,11 @@ public class BaseClass {
 	public ExtentHtmlReporter htmlReporter; //responsible for the look and feel of the extent reports
 	public ExtentReports extent; //Responsible for adding System related information
 	public ExtentTest test; //Responsible for logging and adding screenshots to the reports
+	String dateName = new SimpleDateFormat(" yyyy MM dd hh mm ss").format(new Date());//Just to add time to the filenames to make them dynamic
 
-
+	@BeforeTest()
 	public void createReport() throws UnknownHostException {
-		htmlReporter =new ExtentHtmlReporter(System.getProperty("user.dir")+"/test-output/my-report.html"); //you need to specify the path where you wanted to store your reports
+		htmlReporter =new ExtentHtmlReporter(System.getProperty("user.dir")+"/test-output/extenReports/my-report"+ dateName +".html"); //you need to specify the path where you wanted to store your reports
 		htmlReporter.config().setTheme(Theme.DARK);
 		htmlReporter.config().setDocumentTitle("My Extent Reports");
 		htmlReporter.config().setReportName("Functional Testing Reports");
@@ -50,7 +55,8 @@ public class BaseClass {
 		extent.setSystemInfo("IP", addr.getHostAddress());
 		System.out.println("I am from Create Report");
 	}
-
+	
+	@BeforeMethod
 	public WebDriver initialise_WebDriver() throws IOException {
 		FileInputStream fis= new FileInputStream("C:\\Users\\pravinutala\\SimpleFramework\\src\\main\\java\\resources\\config.properties");
 		prop.load(fis);
@@ -67,11 +73,13 @@ public class BaseClass {
 		}
 		return driver;
 	}
-
+	@AfterTest
 	public void endReport() {
 		extent.flush();
 	}
-
+	
+	
+	@AfterMethod
 	public void tearDown(ITestResult result) throws IOException {
 		System.out.println("I am from TearDown");
 		if(result.getStatus()==ITestResult.SUCCESS) { //when test case got passed, we are logging this into report
@@ -92,7 +100,6 @@ public class BaseClass {
 	}
 
 	public String getScreenshot(WebDriver driver, String Screenshotname) throws IOException {
-		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 
