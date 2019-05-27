@@ -62,7 +62,7 @@ public class BaseClass {
 		prop.load(fis);
 		if(prop.getProperty("browser").equalsIgnoreCase("Chrome")) {
 			this.driver=new ChromeDriver();
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\pravinutala\\Downloads\\Jars\\Selenium Jars\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", prop.getProperty("chromedriver_path"));
 			driver.manage().deleteAllCookies();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
