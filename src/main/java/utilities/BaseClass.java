@@ -58,7 +58,7 @@ public class BaseClass {
 	
 	@BeforeMethod
 	public WebDriver initialise_WebDriver() throws IOException {
-		FileInputStream fis= new FileInputStream("C:\\Users\\pravinutala\\SimpleFramework\\src\\main\\java\\resources\\config.properties");
+		FileInputStream fis= new FileInputStream("https://github.com/pradeeprvs/SimpleAutomationFramework/tree/master/src/main/java/resources/config.properties");
 		prop.load(fis);
 		if(prop.getProperty("browser").equalsIgnoreCase("Chrome")) {
 			this.driver=new ChromeDriver();

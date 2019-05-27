@@ -5,7 +5,6 @@
     <classes>
       <class name="AutomationFramework_Selenium.OrangeHRM_Test">
         <methods>
-          <include name="createNodeTest"/>
           <include name="verifyLogo"/>
           <include name="endReport"/>
           <include name="initialise_WebDriver"/>
