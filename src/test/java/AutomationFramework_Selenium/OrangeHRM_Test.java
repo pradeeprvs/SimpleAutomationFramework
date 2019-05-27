@@ -49,5 +49,4 @@ public class OrangeHRM_Test extends BaseClass{
 		test.createNode("Login with In-valid input");
 		Assert.assertTrue(true);
 	}
-
 }
