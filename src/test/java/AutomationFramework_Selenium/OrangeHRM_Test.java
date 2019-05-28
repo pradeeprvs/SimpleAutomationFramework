@@ -1,7 +1,5 @@
 package AutomationFramework_Selenium;
 
-import org.openqa.selenium.By;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import utilities.BaseClass;
