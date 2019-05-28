@@ -39,7 +39,7 @@ public class BaseClass {
 
 	@BeforeTest()
 	public void createReport() throws UnknownHostException {
-		htmlReporter =new ExtentHtmlReporter("test-output/extenReports/my-report "+ dateName +".html"); //you need to specify the path where you wanted to store your reports
+		htmlReporter =new ExtentHtmlReporter("test-output/extenReports/my-report.html"); //you need to specify the path where you wanted to store your reports
 		htmlReporter.config().setTheme(Theme.DARK);
 		htmlReporter.config().setDocumentTitle("My Extent Reports");
 		htmlReporter.config().setReportName("Functional Testing Reports");
