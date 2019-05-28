@@ -27,7 +27,6 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-
 public class BaseClass {
 
 	protected WebDriver driver;
