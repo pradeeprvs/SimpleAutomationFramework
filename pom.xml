@@ -85,7 +85,7 @@
 							<suiteXmlFile>testng.xml</suiteXmlFile>
 						</suiteXmlFiles>
 						<systemPropertyVariables>
-							<executionBrowser>${browser}</executionBrowser>
+							<executionBrowser>Chrome</executionBrowser>
 						</systemPropertyVariables>
 					</configuration>
 				</plugin>
