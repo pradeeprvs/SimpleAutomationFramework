@@ -39,7 +39,7 @@ public class BaseClass {
 
 	@BeforeTest()
 	public void createReport() throws UnknownHostException {
-		htmlReporter =new ExtentHtmlReporter(System.getProperty("user.dir")+"/test-output/extenReports/my-report "+ dateName +".html"); //you need to specify the path where you wanted to store your reports
+		htmlReporter =new ExtentHtmlReporter("test-output/extenReports/my-report "+ dateName +".html"); //you need to specify the path where you wanted to store your reports
 		htmlReporter.config().setTheme(Theme.DARK);
 		htmlReporter.config().setDocumentTitle("My Extent Reports");
 		htmlReporter.config().setReportName("Functional Testing Reports");
@@ -58,7 +58,7 @@ public class BaseClass {
 	
 	@BeforeMethod
 	public WebDriver initialise_WebDriver() throws IOException {
-		FileInputStream fis= new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\config.properties");
+		FileInputStream fis= new FileInputStream("src\\main\\java\\resources\\config.properties");
 		prop.load(fis);
 		if(prop.getProperty("browser").equalsIgnoreCase("Chrome")) {
 			this.driver=new ChromeDriver();
