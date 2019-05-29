@@ -23,14 +23,14 @@ public class OrangeHRM_Test extends BaseClass{
 		driver.findElement(By.id("txtPassword")).sendKeys("admin123");
 		driver.findElement(By.id("btnLogin")).click();
 	}
-	
+
 	@Test
 	public void verifyLogo() {
 		test= extent.createTest("Verify Logo Test");
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		Assert.assertTrue(driver.findElement(By.xpath(".//div[@id='divLogo']/img")).isDisplayed());
 	}
-	
+
 	@Test
 	public void createNodeTest(  ) {
 		driver.get("https://opensource-demo.orangehrmlive.com/");
