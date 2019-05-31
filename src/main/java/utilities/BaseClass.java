@@ -105,14 +105,20 @@ public class BaseClass {
 		driver.quit();
 	}
 
-	public String getScreenshot(WebDriver driver, String Screenshotname) throws IOException {
+	public String getScreenshot(WebDriver driver, String Screenshotname) {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 
 		// after execution, you could see a folder "FailedTestsScreenshots" under src folder
 		String destination = "Screenshots/" + Screenshotname + dateName + ".png";
 		File finalDestination = new File(destination);
-		FileUtils.copyFile(source, finalDestination);
+		try {
+			FileUtils.copyFile(source, finalDestination);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			System.out.println("File Not Copied at : "+destination);
+			e.printStackTrace();
+		}
 		return destination;
 
 	}
