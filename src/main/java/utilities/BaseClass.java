@@ -116,6 +116,7 @@ public class BaseClass {
 		File TempDestination = new File(tempDestination);//second copy for the workspace
 		try {
 			FileUtils.copyFile(source, finalDestination);
+			FileUtils.copyFile(source, TempDestination);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			System.out.println("File Not Copied at : "+destination);
