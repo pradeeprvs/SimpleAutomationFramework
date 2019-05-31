@@ -110,7 +110,7 @@ public class BaseClass {
 		File source = ts.getScreenshotAs(OutputType.FILE);
 
 		// after execution, you could see a folder "FailedTestsScreenshots" under src folder
-		String destination = "C:\\Users\\pravinutala\\SimpleFramework\\Screenshots\\" + Screenshotname + dateName + ".png";
+		String destination = "Screenshots" + Screenshotname + dateName + ".png";
 		File finalDestination = new File(destination);
 		try {
 			FileUtils.copyFile(source, finalDestination);
