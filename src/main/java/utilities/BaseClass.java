@@ -63,11 +63,11 @@ public class BaseClass {
 		FileInputStream fis= new FileInputStream("src\\main\\java\\resources\\config.properties");
 		prop.load(fis);
 		if(prop.getProperty("browser").equalsIgnoreCase("Chrome")) {
-//			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-//			ChromeOptions options = new ChromeOptions();
-//			options.addArguments("--headless");//This is needed to run headless browser tests
-//			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-			this.driver=new ChromeDriver();
+			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless");//This is needed to run headless browser tests
+			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+			this.driver=new ChromeDriver(options);
 			System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 			driver.manage().deleteAllCookies();
 			driver.manage().window().maximize();
