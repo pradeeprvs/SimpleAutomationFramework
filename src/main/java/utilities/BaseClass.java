@@ -111,7 +111,7 @@ public class BaseClass {
 
 		// after execution, you could see a folder "FailedTestsScreenshots" under src folder
 		//String destination = "C:\\Users\\pravinutala\\SimpleFramework\\Screenshots\\" + Screenshotname + dateName + ".png";
-		String destination = "..\\SimpleFramework\\test-output\\extentReports\\Screenshot\\" + Screenshotname + dateName + ".png";
+		String destination = "C:\\Users\\pravinutala\\eclipse-workspace\\jenkins\\workspace\\SimpleFramework\\test-output\\extentReports\\Screenshot\\" + Screenshotname + dateName + ".png";
 		File finalDestination = new File(destination);//First copy to the jenkins job...workspace specific to jenkins
 		try {
 			FileUtils.copyFile(source, finalDestination);
