@@ -31,7 +31,7 @@ public class BaseClass {
 
 	protected WebDriver driver;
 	Properties prop =new Properties();
-	public ExtentHtmlReporter htmlReporter; //responsible for the look and feel of the extent reports
+	public ExtentHtmlReporter htmlReporter; //responsible for the configuration of look and feel of the extent reports
 	public ExtentReports extent; //Responsible for adding System related information
 	public ExtentTest test; //Responsible for logging and adding screenshots to the reports
 	String dateName = new SimpleDateFormat(" yyyy MM dd hh mm ss").format(new Date());//Just to add time to the filenames to make them dynamic
