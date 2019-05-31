@@ -110,13 +110,10 @@ public class BaseClass {
 		File source = ts.getScreenshotAs(OutputType.FILE);
 
 		// after execution, you could see a folder "FailedTestsScreenshots" under src folder
-		String destination = System.getProperty("user.dir")+"\\eclipse-workspace\\jenkins\\workspace\\SimpleFramework\\Screenshots\\" + Screenshotname + dateName + ".png";
-		String tempDestination=System.getProperty("user.dir")+"\\Screenshots\\"+Screenshotname + dateName + ".png";
+		String destination = "C:\\Users\\pravinutala\\eclipse-workspace\\jenkins\\workspace\\SimpleFramework\\Screenshots\\" + Screenshotname + dateName + ".png";
 		File finalDestination = new File(destination);//First copy to the jenkins job...workspace specific to jenkins
-		File TempDestination = new File(tempDestination);//second copy for the workspace
 		try {
 			FileUtils.copyFile(source, finalDestination);
-			FileUtils.copyFile(source, TempDestination);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			System.out.println("File Not Copied at : "+destination);

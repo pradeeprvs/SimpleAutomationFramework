@@ -38,7 +38,7 @@ public class OrangeHRM_Test extends BaseClass{
 	}
 
 	@Test
-	public void createNodeTest(  ) throws IOException {
+	public void createNodeTest() throws IOException {
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		test = extent.createTest("OrangeHRMcreateNodeTest");
 		test.createNode("Login with Valid input");
