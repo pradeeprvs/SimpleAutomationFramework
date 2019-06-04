@@ -1,93 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26054" started-at="2019-05-31T10:51:14Z" finished-at="2019-05-31T10:51:40Z">
+  <suite name="Default suite" duration-ms="11185" started-at="2019-06-03T09:08:15Z" finished-at="2019-06-03T09:08:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26054" started-at="2019-05-31T10:51:14Z" finished-at="2019-05-31T10:51:40Z">
+    <test name="Default test" duration-ms="11185" started-at="2019-06-03T09:08:15Z" finished-at="2019-06-03T09:08:26Z">
       <class name="AutomationFramework_Selenium.OrangeHRM_Test">
-        <test-method status="PASS" signature="createReport()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="createReport" is-config="true" duration-ms="123" started-at="2019-05-31T10:51:14Z" finished-at="2019-05-31T10:51:14Z">
+        <test-method status="PASS" signature="createReport()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@343f4d3d]" name="createReport" is-config="true" duration-ms="126" started-at="2019-06-03T09:08:15Z" finished-at="2019-06-03T09:08:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method status="PASS" signature="initialise_WebDriver()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="initialise_WebDriver" is-config="true" duration-ms="1736" started-at="2019-05-31T10:51:14Z" finished-at="2019-05-31T10:51:16Z">
+        <test-method status="PASS" signature="initialise_WebDriver()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@343f4d3d]" name="initialise_WebDriver" is-config="true" duration-ms="1768" started-at="2019-06-03T09:08:15Z" finished-at="2019-06-03T09:08:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialise_WebDriver -->
-        <test-method status="PASS" signature="createNodeTest()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="createNodeTest" duration-ms="3623" started-at="2019-05-31T10:51:16Z" finished-at="2019-05-31T10:51:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNodeTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="tearDown" is-config="true" duration-ms="841" started-at="2019-05-31T10:51:19Z" finished-at="2019-05-31T10:51:20Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=createNodeTest status=SUCCESS method=OrangeHRM_Test.createNodeTest()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="initialise_WebDriver()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="initialise_WebDriver" is-config="true" duration-ms="1290" started-at="2019-05-31T10:51:20Z" finished-at="2019-05-31T10:51:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialise_WebDriver -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="loginTest" duration-ms="6288" started-at="2019-05-31T10:51:21Z" finished-at="2019-05-31T10:51:28Z">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@343f4d3d]" name="loginTest" duration-ms="8112" started-at="2019-06-03T09:08:17Z" finished-at="2019-06-03T09:08:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="tearDown" is-config="true" duration-ms="862" started-at="2019-05-31T10:51:28Z" finished-at="2019-05-31T10:51:28Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@343f4d3d]" name="tearDown" is-config="true" duration-ms="924" started-at="2019-06-03T09:08:25Z" finished-at="2019-06-03T09:08:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=OrangeHRM_Test.loginTest()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a] output={null}]]]>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=OrangeHRM_Test.loginTest()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@343f4d3d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="initialise_WebDriver()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="initialise_WebDriver" is-config="true" duration-ms="1235" started-at="2019-05-31T10:51:28Z" finished-at="2019-05-31T10:51:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialise_WebDriver -->
-        <test-method status="PASS" signature="openURL()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="openURL" duration-ms="3311" started-at="2019-05-31T10:51:30Z" finished-at="2019-05-31T10:51:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openURL -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="tearDown" is-config="true" duration-ms="837" started-at="2019-05-31T10:51:33Z" finished-at="2019-05-31T10:51:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=openURL status=SUCCESS method=OrangeHRM_Test.openURL()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="initialise_WebDriver()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="initialise_WebDriver" is-config="true" duration-ms="1278" started-at="2019-05-31T10:51:34Z" finished-at="2019-05-31T10:51:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialise_WebDriver -->
-        <test-method status="PASS" signature="verifyLogo()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="verifyLogo" duration-ms="3517" started-at="2019-05-31T10:51:35Z" finished-at="2019-05-31T10:51:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogo -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="tearDown" is-config="true" duration-ms="826" started-at="2019-05-31T10:51:39Z" finished-at="2019-05-31T10:51:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLogo status=SUCCESS method=OrangeHRM_Test.verifyLogo()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@39c0f4a]" name="endReport" is-config="true" duration-ms="262" started-at="2019-05-31T10:51:39Z" finished-at="2019-05-31T10:51:40Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@343f4d3d]" name="endReport" is-config="true" duration-ms="237" started-at="2019-06-03T09:08:26Z" finished-at="2019-06-03T09:08:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

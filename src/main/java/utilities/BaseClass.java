@@ -11,9 +11,11 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -57,17 +59,17 @@ public class BaseClass {
 		extent.setSystemInfo("IP", addr.getHostAddress());
 		System.out.println("I am from Create Report");
 	}
-	
+
 	@BeforeMethod
 	public WebDriver initialise_WebDriver() throws IOException {
 		FileInputStream fis= new FileInputStream("src\\main\\java\\resources\\config.properties");
 		prop.load(fis);
 		if(prop.getProperty("browser").equalsIgnoreCase("Chrome")) {
-			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--headless");//This is needed to run headless browser tests
-			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-			this.driver=new ChromeDriver(options);
+			//			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+			//			ChromeOptions options = new ChromeOptions();
+			//			options.addArguments("--headless");//This is needed to run headless browser tests
+			//			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+			this.driver=new ChromeDriver();
 			System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 			driver.manage().deleteAllCookies();
 			driver.manage().window().maximize();
@@ -83,14 +85,14 @@ public class BaseClass {
 	public void endReport() {
 		extent.flush();
 	}
-	
-	
+
+
 	@AfterMethod
 	public void tearDown(ITestResult result) throws IOException {
 		System.out.println("I am from TearDown");
 		if(result.getStatus()==ITestResult.SUCCESS) { //when test case got passed, we are logging this into report
-						String screenshotPath = getScreenshot(driver, result.getName());
-						   test.addScreenCaptureFromPath(screenshotPath); //adding screenshot
+			String screenshotPath = getScreenshot(driver, result.getName());
+			test.addScreenCaptureFromPath(screenshotPath); //adding screenshot
 			test.log(Status.PASS,result.getName() + " test case is passed");
 		}
 
@@ -122,6 +124,22 @@ public class BaseClass {
 		}
 		System.out.println("File to be copied from : "+destination);
 		return destination;
+	}
 
+	public static void highLightElement(WebDriver driver, WebElement element)
+	{
+		JavascriptExecutor js=(JavascriptExecutor)driver; 
+		js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", element);
+		js.executeScript("arguments[0].style.border='3px groove red'", element);
+		try 
+		{
+			Thread.sleep(500);
+		} 
+		catch (InterruptedException e) {
+
+			System.out.println(e.getMessage());
+		} 
+		js.executeScript("arguments[0].setAttribute('style','border: solid 2px white');", element);
+		js.executeScript("arguments[0].style.border=''", element);
 	}
 }
