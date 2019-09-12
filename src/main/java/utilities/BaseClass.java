@@ -70,7 +70,7 @@ public class BaseClass {
 			//			options.addArguments("--headless");//This is needed to run headless browser tests
 			//			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 			this.driver=new ChromeDriver();
-			System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+			System.setProperty("webdriver.chromedriver.driver", "chromedriver.exe");
 			driver.manage().deleteAllCookies();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

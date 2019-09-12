@@ -3,7 +3,8 @@
 <suite name="SimpleFramework">
   <test name="AutomationFramework">
     <classes>
-      <class name="AutomationFramework_Selenium.AppTest"/>
+<!--       <class name="AutomationFramework_Selenium.AppTest"/> -->
+		<class name="cucumberOptions.TestRunner" />
     </classes>
   </test> <!-- AutomationFramework -->
 </suite> <!-- SimpleFramework -->

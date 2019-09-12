@@ -1,116 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32860" started-at="2019-07-10T04:49:38Z" finished-at="2019-07-10T04:50:11Z">
+  <suite name="SimpleFramework" duration-ms="29" started-at="2019-09-10T08:51:13Z" finished-at="2019-09-10T08:51:13Z">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@55d56113]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="32860" started-at="2019-07-10T04:49:38Z" finished-at="2019-07-10T04:50:11Z">
-      <class name="AutomationFramework_Selenium.OrangeHRM_Test">
-        <test-method status="PASS" signature="createReport()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@56cbfb61]" name="createReport" is-config="true" duration-ms="156" started-at="2019-07-10T10:19:38Z" finished-at="2019-07-10T10:19:39Z">
+    <test name="AutomationFramework" duration-ms="29" started-at="2019-09-10T08:51:13Z" finished-at="2019-09-10T08:51:13Z">
+      <class name="cucumberOptions.TestRunner">
+        <test-method status="FAIL" signature="setUpClass()[pri:0, instance:cucumberOptions.TestRunner@55d56113]" name="setUpClass" is-config="true" duration-ms="10" started-at="2019-09-10T08:51:13Z" finished-at="2019-09-10T08:51:13Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[io/cucumber/core/options/CucumberOptionsAnnotationParser$OptionsProvider]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: io/cucumber/core/options/CucumberOptionsAnnotationParser$OptionsProvider
+at cucumber.api.testng.TestNGCucumberRunner.<init>(TestNGCucumberRunner.java:20)
+at cucumber.api.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:21)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: io.cucumber.core.options.CucumberOptionsAnnotationParser$OptionsProvider
+at java.net.URLClassLoader.findClass(Unknown Source)
+at java.lang.ClassLoader.loadClass(Unknown Source)
+at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+at java.lang.ClassLoader.loadClass(Unknown Source)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createReport -->
-        <test-method status="PASS" signature="initialise_WebDriver()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@56cbfb61]" name="initialise_WebDriver" is-config="true" duration-ms="1887" started-at="2019-07-10T10:19:39Z" finished-at="2019-07-10T10:19:40Z">
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumberOptions.TestRunner@55d56113]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2019-09-10T08:51:13Z" finished-at="2019-09-10T08:51:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialise_WebDriver -->
-        <test-method status="PASS" signature="createNodeTest()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@56cbfb61]" name="createNodeTest" duration-ms="4319" started-at="2019-07-10T10:19:40Z" finished-at="2019-07-10T10:19:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNodeTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@56cbfb61]" name="tearDown" is-config="true" duration-ms="864" started-at="2019-07-10T10:19:45Z" finished-at="2019-07-10T10:19:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=createNodeTest status=SUCCESS method=OrangeHRM_Test.createNodeTest()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@56cbfb61] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="initialise_WebDriver()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@56cbfb61]" name="initialise_WebDriver" is-config="true" duration-ms="1319" started-at="2019-07-10T10:19:46Z" finished-at="2019-07-10T10:19:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialise_WebDriver -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@56cbfb61]" name="loginTest" duration-ms="8443" started-at="2019-07-10T10:19:47Z" finished-at="2019-07-10T10:19:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@56cbfb61]" name="tearDown" is-config="true" duration-ms="970" started-at="2019-07-10T10:19:55Z" finished-at="2019-07-10T10:19:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=OrangeHRM_Test.loginTest()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@56cbfb61] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="initialise_WebDriver()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@56cbfb61]" name="initialise_WebDriver" is-config="true" duration-ms="1435" started-at="2019-07-10T10:19:56Z" finished-at="2019-07-10T10:19:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialise_WebDriver -->
-        <test-method status="PASS" signature="openRun()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@56cbfb61]" name="openRun" duration-ms="149" started-at="2019-07-10T10:19:58Z" finished-at="2019-07-10T10:19:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openRun -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@56cbfb61]" name="tearDown" is-config="true" duration-ms="923" started-at="2019-07-10T10:19:58Z" finished-at="2019-07-10T10:19:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=openRun status=SUCCESS method=OrangeHRM_Test.openRun()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@56cbfb61] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="initialise_WebDriver()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@56cbfb61]" name="initialise_WebDriver" is-config="true" duration-ms="1281" started-at="2019-07-10T10:19:59Z" finished-at="2019-07-10T10:20:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialise_WebDriver -->
-        <test-method status="PASS" signature="openURL()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@56cbfb61]" name="openURL" duration-ms="3837" started-at="2019-07-10T10:20:00Z" finished-at="2019-07-10T10:20:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openURL -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@56cbfb61]" name="tearDown" is-config="true" duration-ms="913" started-at="2019-07-10T10:20:04Z" finished-at="2019-07-10T10:20:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=openURL status=SUCCESS method=OrangeHRM_Test.openURL()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@56cbfb61] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="initialise_WebDriver()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@56cbfb61]" name="initialise_WebDriver" is-config="true" duration-ms="1304" started-at="2019-07-10T10:20:05Z" finished-at="2019-07-10T10:20:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialise_WebDriver -->
-        <test-method status="PASS" signature="verifyLogo()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@56cbfb61]" name="verifyLogo" duration-ms="3913" started-at="2019-07-10T10:20:06Z" finished-at="2019-07-10T10:20:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogo -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@56cbfb61]" name="tearDown" is-config="true" duration-ms="852" started-at="2019-07-10T10:20:10Z" finished-at="2019-07-10T10:20:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLogo status=SUCCESS method=OrangeHRM_Test.verifyLogo()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@56cbfb61] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:AutomationFramework_Selenium.OrangeHRM_Test@56cbfb61]" name="endReport" is-config="true" duration-ms="279" started-at="2019-07-10T10:20:11Z" finished-at="2019-07-10T10:20:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-      </class> <!-- AutomationFramework_Selenium.OrangeHRM_Test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumberOptions.TestRunner -->
+    </test> <!-- AutomationFramework -->
+  </suite> <!-- SimpleFramework -->
 </testng-results>

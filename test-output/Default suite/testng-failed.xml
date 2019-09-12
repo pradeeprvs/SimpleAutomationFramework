@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test verbose="2" name="Default test">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AutomationFramework_Selenium.OrangeHRM_Test"/>
+      <class name="AutomationFramework_Selenium.OrangeHRM_Test">
+        <methods>
+          <include name="createNodeTest"/>
+          <include name="verifyLogo"/>
+          <include name="endReport"/>
+          <include name="initialise_WebDriver"/>
+          <include name="openRun"/>
+          <include name="createReport"/>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="openURL"/>
+        </methods>
+      </class> <!-- AutomationFramework_Selenium.OrangeHRM_Test -->
     </classes>
-  </test> <!-- Default test -->
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

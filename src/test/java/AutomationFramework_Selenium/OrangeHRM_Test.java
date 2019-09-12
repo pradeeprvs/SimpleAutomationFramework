@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import utilities.BaseClass;
 
-public class OrangeHRM_Test extends BaseClass{
+class OrangeHRM_Test extends BaseClass{
 	
 	@Test
 	public void openRun() throws Exception {
